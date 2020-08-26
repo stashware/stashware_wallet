@@ -1,0 +1,56 @@
+@primary :#2FBB83;
+
+.container {
+  max-width: 1200px !important;
+}
+
+.bg-transparent-1 {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.bg-transparent-2 {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.title-border {
+  border-left : 4px solid @primary;
+  padding-left: 5px;
+}
+
+.vcp-error-tips {
+  width        : 400px !important;
+  height       : 100px !important;
+  line-height  : 100px !important;
+  position     : absolute !important;
+  left         : 0px !important;
+  right        : 0px !important;
+  top          : 0px !important;
+  bottom       : 0px !important;
+  margin       : auto !important;
+  background   : rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px !important;
+  color        : @primary  !important;
+  box-shadow   : 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+  font-size    : 1.25rem !important;
+}
+
+* {
+  --scrollbarBG  : transparent;
+  --thumbBG      : rgba(255, 255, 255, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius   : 6px;
+    border          : 3px solid var(--scrollbarBG);
+  }
+}
